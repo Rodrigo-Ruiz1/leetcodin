@@ -14,12 +14,8 @@ var lengthOfLongestSubstring = function(s) {
             let temp = 0
             for (element in stack) {
                 if (stack[element] == s[i]) {
-                    console.log('current element', stack[element])
-                    console.log('stack before ', stack)
-                    console.log('removing indexes between 0 and', temp)
                     stack.push(s[i])
                     stack.splice(0,temp+1)
-                    console.log('stack after', stack)
                     currentLongest -= temp
                     break
                 }
