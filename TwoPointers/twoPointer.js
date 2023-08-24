@@ -14,4 +14,5 @@ function twoPointer(target, nums) {
 let target = -7;
 let nums = [-13, -9, -5, -2, -1, 3, 4]
 
+
 console.log(twoPointer(target, nums))
