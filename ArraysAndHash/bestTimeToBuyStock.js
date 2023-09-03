@@ -17,6 +17,6 @@ var maxProfit = function(prices) {
     
 };
 
-let prices = [1,2]
+let prices = [1,2, 6, 1]
 
 console.log(maxProfit(prices))
