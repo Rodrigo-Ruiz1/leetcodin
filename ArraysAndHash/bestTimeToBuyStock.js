@@ -1,16 +1,16 @@
 var maxProfit = function(prices) {
     let left = 0
     let right = left + 1
-    let currentMax = 0
+    let current = 0
     let max = 0
 
     while (right <= prices.length -1) {
         if (prices[right] < prices[left]) {
             left = right
         } else {
-            currentMax = prices[right] - prices[left]
+            current = prices[right] - prices[left]
         }
-        max = Math.max(currentMax, max)
+        max = Math.max(current, max)
         right +=1
     }
     return max
